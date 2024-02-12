@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color: red;
+}
+
+@media print {
+	a[href]::after {
+		content: ' (' attr(href) ')';
+	}
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		background-image: url("images/goku drip.jpg");
+		background-repeat: no-repeat;
+		background-position: top;
+		background-size: cover;
+	}
+}
